@@ -16,8 +16,6 @@ public class Client {
             writer.println("Oleg");
             System.out.println(reader.readLine());
 
-        } catch (IOException e) {
-            throw new RuntimeException(e);
         }
     }
 }
