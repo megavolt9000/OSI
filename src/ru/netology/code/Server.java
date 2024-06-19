@@ -11,7 +11,7 @@ public class Server {
 
     public static final Integer PORT = 8083;
 
-    public static void main(String[] args)  {
+    public static void main(String[] args) {
         int port = 8083;
         try (ServerSocket serverSocket = new ServerSocket(port)) {
             System.out.println("Server Start:");
