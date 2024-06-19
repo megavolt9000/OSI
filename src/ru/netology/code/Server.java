@@ -9,9 +9,9 @@ import java.net.Socket;
 
 public class Server {
 
-    // public static final Integer PORT = 8083;
+    public static final Integer PORT = 8083;
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args)  {
         int port = 8083;
         try (ServerSocket serverSocket = new ServerSocket(port)) {
             System.out.println("Server Start:");
@@ -27,7 +27,7 @@ public class Server {
             }
         } catch (IOException e) {
 
-            throw new IOException(e);
+            e.printStackTrace();
         }
     }
 }
